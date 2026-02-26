@@ -43,6 +43,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   FloatingActionButton(
                     onPressed: (){
+                      value.decrement();
+                    },
+                    tooltip: 'Decrement',
+                    child: const Icon(Icons.remove),
+                  ),
+                  FloatingActionButton(
+                    onPressed: (){
                       value.increment();
                     },
                     tooltip: 'Increment',
