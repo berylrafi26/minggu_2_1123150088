@@ -36,13 +36,21 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
           ),
-          floatingActionButton: FloatingActionButton(
-            onPressed: (){
-              value.increment();
-            },
-            tooltip: 'Increment',
-            child: const Icon(Icons.add),
-          ),
+          floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+            floatingActionButton: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  FloatingActionButton(
+                    onPressed: (){
+                      value.increment();
+                    },
+                    tooltip: 'Increment',
+                    child: const Icon(Icons.add),
+                  ),
+                ],
+              ),
+            ),
         );
       }
     );
