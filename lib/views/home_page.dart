@@ -40,6 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
             floatingActionButton: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   FloatingActionButton(
                     onPressed: (){
